@@ -197,8 +197,48 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top:50px;
 }
 .copyright{
     color: #f7087b;
     font-weight: bold;
+}
+
+/*------------------------- start media query css selector
+-----------------------------responsive building site-------------------- */
+@media (max-width:900px) {
+    .gallery{
+        grid-template-columns: 1fr 1fr;
+    }
+    .banner-right img{
+        width:80%;
+        margin-bottom: 20px;
+    }
+    .banner-left h1{
+        font-size:30px;
+    }
+}
+@media (max-width:800px) {
+    .banner{
+        display:grid;
+        grid-template-columns: 1fr ;
+        height: fit-content;
+    }
+    .banner-left{
+        order: 2;
+        padding: 50px 0;
+    }
+    .gallery ,.feature ,.contract{
+        grid-template-columns: 1fr;
+    }
+    .banner-right img{
+        width: 80%;
+    }
+    .photo {
+        text-align: center;
+    }
+    .photo img{
+        max-width :350px;
+
+    }
 }
