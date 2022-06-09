@@ -41,7 +41,7 @@ li > a
     text-decoration: none;
     color: #fff;
     font-weight:700;
-    padding: 15px 20px;
+    padding: 10px 15px;
 }
 
 /* ------------------------------section second ----------------------------- */
@@ -203,6 +203,17 @@ footer{
     color: #f7087b;
     font-weight: bold;
 }
+/* nav bar ---- */
+#menu-togler{
+    display: none;
+  
+}
+.menu-togler-fa-solid{
+        display: none;
+        color: #fff;
+        font-size:30px;
+
+}
 
 /*------------------------- start media query css selector
 -----------------------------responsive building site-------------------- */
@@ -241,4 +252,30 @@ footer{
         max-width :350px;
 
     }
+    .menu-togler-fa-solid {
+        display: block;
+      
+    }
+    .navigation{
+        position:absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+       padding: 10px 0;
+        flex-direction: column;
+        align-items: center;
+        transform: translateY(-324px);
+        background-color: #fff;
+        transition:.4s ease-in-out;
+    }
+    #menu-togler:checked ~ .navigation{
+        transform: translateY(0px);
+
+    }
+    .navigation li a {
+        color: #de1073;
+    }
+   
+
 }
+
